@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main game card container -->
+    <div class="main-card">
+        <div>
+            <!-- Main heading -->
+            <h1>Rock Paper Scissor Game</h1>
+            <br>
+            <!-- Game instruction message -->
+            <p class="msg">Choose your move:</p>
+        </div>
+        <!-- Choice buttons -->
+        <div class="choise">
+            <button onclick="play('rock')"><img src="rock.png" alt="Rock hand"></button>
+            <button onclick="play('paper')"><img src="paper.png" alt="Paper hand"></button>
+            <button onclick="play('scissor')"><img src="scissors.png" alt="Scissor hand"></button>
+        </div>       
+        <!-- Result message -->
+        <p id="result"></p>
+        <!-- Scoreboard -->
+        <div class="score-board">
+            <div class="score">
+                <p id="user">0</p>
+                <p>You</p>
+            </div>
+            <div class="score">
+                <p id="Comp">0</p>
+                <p>Computer</p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Rock Paper Scissor Game &mdash; Designed by You
+    </footer>
+    <!-- Game logic script -->
+    <script src="code.js"></script>
+</body>
+</html>
